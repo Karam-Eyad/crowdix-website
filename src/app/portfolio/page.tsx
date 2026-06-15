@@ -64,6 +64,20 @@ const PROJECTS = [
     img: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
     wide: false,
   },
+  {
+    id: "crowdix-site",
+    tag: "cv",
+    title: "Crowdix Website",
+    category: "Websites & Apps",
+    desc: "Full-stack bilingual AI agency site built with Next.js 16, glassmorphism UI, and deployed on Vercel.",
+    status: "LIVE",
+    statusStyle: { background: "rgba(34,197,94,0.12)", color: "#4ade80", border: "1px solid rgba(34,197,94,0.3)" },
+    img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
+    wide: true,
+    tags: ["#Next.js", "#Tailwind", "#AI"],
+    liveUrl: "https://crowdix-website.vercel.app",
+    githubUrl: "https://github.com/Karam-Eyad/crowdix-website",
+  },
 ]
 
 function ProjectCard({ p, onMouseMove }: { p: typeof PROJECTS[number]; onMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void }) {
@@ -82,11 +96,27 @@ function ProjectCard({ p, onMouseMove }: { p: typeof PROJECTS[number]; onMouseMo
           <p className="text-xs uppercase tracking-widest font-mono mb-2" style={{ color: "var(--cx-accent)" }}>{p.category}</p>
           <h3 className="text-2xl font-bold text-white mb-3">{p.title}</h3>
           <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.55)" }}>{p.desc}</p>
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap mb-4">
             {p.tags?.map(tag => (
               <span key={tag} className="text-xs px-2 py-1 rounded font-mono"
                 style={{ background: "var(--cx-accent-dim)", color: "var(--cx-accent)" }}>{tag}</span>
             ))}
+          </div>
+          <div className="flex gap-3 flex-wrap">
+            {(p as any).liveUrl && (
+              <a href={(p as any).liveUrl} target="_blank" rel="noopener"
+                className="text-xs flex items-center gap-1 px-3 py-1.5 rounded-full font-mono transition-all hover:opacity-80"
+                style={{ background: "rgba(34,197,94,0.12)", color: "#4ade80", border: "1px solid rgba(34,197,94,0.25)" }}>
+                <span className="material-symbols-outlined" style={{ fontSize: 12 }}>open_in_new</span> Live
+              </a>
+            )}
+            {(p as any).githubUrl && (
+              <a href={(p as any).githubUrl} target="_blank" rel="noopener"
+                className="text-xs flex items-center gap-1 px-3 py-1.5 rounded-full font-mono transition-all hover:opacity-80"
+                style={{ background: "rgba(255,255,255,0.07)", color: "rgba(255,255,255,0.6)", border: "1px solid rgba(255,255,255,0.12)" }}>
+                <span className="material-symbols-outlined" style={{ fontSize: 12 }}>code</span> GitHub
+              </a>
+            )}
           </div>
         </div>
       </div>
