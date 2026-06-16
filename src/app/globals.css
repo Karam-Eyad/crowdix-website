@@ -458,7 +458,7 @@ footer.cx-footer {
    MOBILE RESPONSIVE — COMPLETE FIXES
    ══════════════════════════════════════════════════════════════ */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Hero */
   section.relative.min-h-screen { padding-top: 80px; padding-bottom: 60px; }
 

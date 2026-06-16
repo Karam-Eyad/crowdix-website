@@ -13,8 +13,8 @@ export function Footer() {
       <div className="footer-inner">
         <div className="footer-top">
           <div>
-            <Image src="/crowdix-logo-new.png" alt="Crowdix" width={220} height={55}
-              style={{ height: 55, width: 220 }} />
+            <Image src="/crowdix-logo-footer.png" alt="Crowdix" width={479} height={560}
+              style={{ height: 72, width: "auto" }} />
             <p className="footer-desc">{t("foot_desc")}</p>
           </div>
           <div className="footer-col">
