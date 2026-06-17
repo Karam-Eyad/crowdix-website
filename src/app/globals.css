@@ -243,17 +243,6 @@ body {
 }
 @keyframes cx-pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
 
-.lang-toggle {
-  display: inline-flex; background: var(--cx-surface);
-  border: 1px solid var(--cx-border); border-radius: 999px; padding: 2px;
-  font-size: 11px; letter-spacing: .04em;
-  font-family: var(--font-geist-mono), monospace;
-}
-.lang-toggle button {
-  padding: 5px 10px; border-radius: 999px; color: var(--cx-muted);
-  transition: all .15s; background: none; border: none; cursor: pointer; font: inherit;
-}
-.lang-toggle button.active { background: #fff; color: #000; }
 
 .burger {
   display: none; width: 36px; height: 36px; border-radius: 8px;
@@ -310,6 +299,7 @@ footer.cx-footer {
   .cx-nav-center { display: none; }
   .burger { display: inline-flex; }
   .brand-status { display: none; }
+  .cx-nav-right .cx-nav-cta { display: none; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
   .cx-nav-grid { padding: 0 16px; }
 }

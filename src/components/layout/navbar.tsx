@@ -9,7 +9,7 @@ import { useLang } from "@/lib/i18n"
 const CALENDLY = "https://calendly.com/crowdix/intro"
 
 export function Navbar() {
-  const { t, lang, setLang } = useLang()
+  const { t } = useLang()
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -64,12 +64,8 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Right — Lang toggle + CTA + Burger */}
+          {/* Right — CTA + Burger */}
           <div className="cx-nav-right">
-            <div className="lang-toggle" role="group">
-              <button className={lang === "en" ? "active" : ""} onClick={() => setLang("en")}>EN</button>
-              <button className={lang === "ar" ? "active" : ""} onClick={() => setLang("ar")}>AR</button>
-            </div>
             <a className="cx-nav-cta" href={CALENDLY} target="_blank" rel="noopener">
               <span style={{ fontSize: 10, color: "#4F8EF7" }}>✦</span>
               {t("nav_book")}
