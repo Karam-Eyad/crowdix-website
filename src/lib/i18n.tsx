@@ -69,8 +69,7 @@ const I18N = {
     pg_port_pill: "Portfolio", pg_port_pill_sub: "Our selected works",
     pg_port_h1_a: "Engineered", pg_port_h1_b: "Excellence",
     pg_port_sub: "Systems built with computational precision. More public case studies landing this quarter.",
-    filter_all: "All", filter_cv: "Computer Vision", filter_pa: "Predictive Analytics",
-    filter_nlp: "NLP Pipelines",
+    filter_all: "All", filter_web: "Websites", filter_ai: "AI Tools",
 
     // About page
     pg_about_pill: "About", pg_about_pill_sub: "Intelligence First",
@@ -168,8 +167,7 @@ const I18N = {
     pg_port_pill: "أعمالنا", pg_port_pill_sub: "مختارات من مشاريعنا",
     pg_port_h1_a: "تميّز", pg_port_h1_b: "مُهندَس",
     pg_port_sub: "أنظمة مبنية بدقة حسابية. المزيد من دراسات الحالة قادمة.",
-    filter_all: "الكل", filter_cv: "رؤية الحاسوب", filter_pa: "تحليلات تنبؤية",
-    filter_nlp: "معالجة اللغة",
+    filter_all: "الكل", filter_web: "المواقع", filter_ai: "أدوات الذكاء",
 
     pg_about_pill: "نبذة", pg_about_pill_sub: "الذكاء أولاً",
     pg_about_h1_a: "هندسة مستقبل",
