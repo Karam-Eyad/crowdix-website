@@ -16,7 +16,7 @@ const PROJECTS = [
     desc: "Dental clinic landing page with appointment booking form and WhatsApp integration.",
     status: "LIVE",
     statusStyle: { background: "rgba(34,197,94,0.12)", color: "#4ade80", border: "1px solid rgba(34,197,94,0.3)" },
-    img: "/screenshots/dental.png",
+    img: "/screenshots/dental_cover.png",
     wide: true,
     tags: ["#HTML", "#CSS", "#WhatsApp"],
     liveUrl: "https://dental-landing-page-rho.vercel.app",

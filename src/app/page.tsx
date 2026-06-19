@@ -14,7 +14,7 @@ const FEATURED_PROJECTS = [
     title: "Dental Landing Page",
     category: "Landing Pages",
     desc: "Dental clinic landing page with appointment booking form and WhatsApp integration.",
-    img: "/screenshots/dental.png",
+    img: "/screenshots/dental_cover.png",
     badge: null as string | null,
   },
   {
